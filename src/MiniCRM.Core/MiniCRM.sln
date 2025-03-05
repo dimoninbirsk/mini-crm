@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniCRM.Data", "..\MiniCRM.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniCRM.Domain", "..\MiniCRM.Domain\MiniCRM.Domain.csproj", "{3F250772-3B38-4120-56C2-D988BE3F3E31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniCRM.UIApplication", "..\MiniCRM.UIApplication\MiniCRM.UIApplication.csproj", "{BB6353EA-C3F7-4DED-BD07-4CBFE18E9CDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3F250772-3B38-4120-56C2-D988BE3F3E31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F250772-3B38-4120-56C2-D988BE3F3E31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F250772-3B38-4120-56C2-D988BE3F3E31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB6353EA-C3F7-4DED-BD07-4CBFE18E9CDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB6353EA-C3F7-4DED-BD07-4CBFE18E9CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB6353EA-C3F7-4DED-BD07-4CBFE18E9CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB6353EA-C3F7-4DED-BD07-4CBFE18E9CDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

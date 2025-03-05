@@ -1,0 +1,35 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MiniCRM.UIApplication"
+             x:Class="MiniCRM.UIApplication.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
+                <!-- Задаем стиль для ContentPage -->
+                <Setter Property="BackgroundColor" Value="#222222" />
+                <!-- Устанавливаем цвет фона -->
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="TextColor" Value="#FFFFFF" />
+                <!-- Размер текста по умолчанию -->
+            </Style>
+            <Style TargetType="Entry">
+                <Setter Property="FontSize" Value="20" />
+                <!-- Размер текста по умолчанию -->
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="Margin" Value="0,10,0,10" />
+                <Setter Property="BackgroundColor" Value="#007BFF" />
+                <Setter Property="TextColor" Value="#DDDDDD" />
+                <!-- Размер текста по умолчанию -->
+            </Style>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

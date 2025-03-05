@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MiniCRM.UIApplication.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MiniCRM.UIApplication"
+    xmlns:pages="clr-namespace:MiniCRM.UIApplication.Pages"
+    Shell.FlyoutBehavior="Flyout"
+    Title="MiniCRM.UIApplication">
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Shell">
+                <Setter Property="Shell.TitleColor" Value="White" />
+                <!-- Цвет заголовка -->
+                <Setter Property="Shell.ForegroundColor" Value="White" />
+                <!-- Цвет элементов управления в title bar (например, кнопки "назад") -->
+                <Setter Property="Shell.BackgroundColor" Value="DarkBlue" />
+                <!-- Цвет фона title bar -->
+                <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
+                <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
+                <Setter Property="Shell.NavBarHasShadow" Value="False" />
+            </Style>
+        </ResourceDictionary>
+    </Shell.Resources>
+    <ShellContent
+        Title="Авторизация"
+        ContentTemplate="{DataTemplate pages:LoginPage}"
+        Route="LoginPage" />
+    <ShellContent
+        Title="Регистрация"
+        ContentTemplate="{DataTemplate pages:RegisterPage}"
+        Route="RegisterPage" />
+    <ShellContent
+        Title="Главная"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+</Shell>
